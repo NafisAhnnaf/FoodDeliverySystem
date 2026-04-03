@@ -53,7 +53,7 @@ The project follows a decoupled client-server architecture:
 ### **Backend Setup**
 1. Navigate to the server directory:
    ```bash
-   cd delivery-backend
+   cd food-delivery-system
    ```
 2. Build the project:
    ```bash
@@ -61,14 +61,14 @@ The project follows a decoupled client-server architecture:
    ```
 3. Run the SOAP Service:
    ```bash
-   mvn glassfish:run  # or your specific server command
+   mvn exec:java
    ```
    *The service will be available at `http://localhost:8080/api/`*
 
 ### **Frontend Setup**
 1. Navigate to the client directory:
    ```bash
-   cd delivery-frontend
+   cd food-delivery-ui
    ```
 2. Install dependencies:
    ```bash
@@ -101,17 +101,4 @@ The project follows a decoupled client-server architecture:
 │   │   └── App.tsx        # Routing Logic
 ```
 
----
 
-## **System Design Note: XML Persistence**
-Unlike standard SQL databases, this system uses an **Atomic XML Update** strategy. Every transaction (like updating an order status) involves:
-1.  Loading the master XML list into memory.
-2.  Filtering and updating the specific object reference.
-3.  Synchronizing dependent objects (e.g., updating a Rider's status when an Order is delivered).
-4.  Persisting the entire collection back to the XML file to ensure data integrity.
-
----
-
-## **Git Guidelines**
-* **Ignore Local Data:** Ensure `*.xml` files are in your `.gitignore` to avoid overwriting the "database" during merges.
-* **Maven:** Standard Maven `target/` folders are excluded to keep the repo clean.
