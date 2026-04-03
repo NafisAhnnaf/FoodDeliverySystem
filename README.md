@@ -2,15 +2,15 @@
 
 A full-stack ecosystem that proves React (2024+) and SOAP (The Bronze Age) can actually be friends. This project features a robust JAX-WS Java Backend that stubbornly refuses to use JSON, opting instead for the "vintage elegance" of XML-based persistence in an era of NoSQL dominance.
 
-The Highlights:
+### The Highlights:
 
-Frontend-to-Legacy Bridge: A modern TypeScript interface that talks to the server by manually crafting SOAP Envelopes using the native fetch API—because who needs REST when you have raw XML strings?
+- Frontend-to-Legacy Bridge: A modern TypeScript interface that talks to the server by manually crafting SOAP Envelopes using the native fetch API—because who needs REST when you have raw XML strings?
 
-The "Database" (sort of): A custom-built XmlRepository layer that treats .xml files like high-performance data clusters (and definitely doesn't cause a merge conflict nightmare).
+- The "Database" (sort of): A custom-built XmlRepository layer that treats .xml files like high-performance data clusters (and definitely doesn't cause a merge conflict nightmare).
 
-Business Logic: Handles the full lifecycle of a delivery—from the Kitchen Monitor grid (very modern) to Rider Fleet Management (very automated), all synchronized via the "ancient scrolls" of JAX-WS.
+- Business Logic: Handles the full lifecycle of a delivery—from the Kitchen Monitor grid (very modern) to Rider Fleet Management (very automated), all synchronized via the "ancient scrolls" of JAX-WS.
 
-Fun Fact: No Axios, no Apollo, no Redux. Just pure, unadulterated fetch() calls delivering heavy-duty SOAP payloads, proving that if you try hard enough, you really can put a Tesla engine inside a 1990 Volvo.
+- Fun Fact: No Axios, no Apollo, no Redux. Just pure, unadulterated fetch() calls delivering heavy-duty SOAP payloads, proving that if you try hard enough, you really can put a Tesla engine inside a 1990 Volvo.
 ---
 
 ## **(Core) Architecture**
